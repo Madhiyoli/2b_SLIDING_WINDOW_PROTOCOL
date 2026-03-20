@@ -31,12 +31,12 @@ while True:
 SERVER
 ```
 import socket
+import socket
 s = socket.socket()
 s.connect(('localhost', 8002))
 while True:
     print(s.recv(1024).decode())
     s.send("Acknowledgement received from the server".encode())
-
 ```
 ## OUPUT
 ![alt text](<Screenshot 2026-02-04 122733.png>)
